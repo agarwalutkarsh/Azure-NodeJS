@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "outputBlob",
+      "type": "blob",
+      "path": "savedreq/{userName}-{DateTime}.txt",
+      "direction": "out",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}
