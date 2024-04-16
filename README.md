@@ -4,7 +4,7 @@ This is the local development of Azure function using Javascript and Azure Funct
 This is a HTTP triggered function which gets triggered by POST request having body and saves in the blob with
 name as {userName}-{DateTime}.txt
 
-#Getting Started
+# Getting Started
 
 ```bash
 #install the node modules
